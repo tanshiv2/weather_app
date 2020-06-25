@@ -1,5 +1,3 @@
-console.log('This is the js page')
-
 const messageOne = document.querySelector('#first')
 const messageTwo = document.querySelector('#second')
 const messageThree = document.querySelector('#third')
@@ -35,6 +33,4 @@ weatherForm.addEventListener('submit', (e) => {
     const location = search.value
 
     fetchData(location)
-
-    console.log(location)
 })

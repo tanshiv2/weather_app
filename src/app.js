@@ -61,7 +61,7 @@ app.get('/weather', (req,res) => {
           {
             return res.send({ error})
           }
-          forecast(location, (error, {description, img, temp, precip}) => {
+          forecast(location, (error, {description, img,temp, precip}) => {
             if(error)
             {
               return res.send('Unable to fetch data')
