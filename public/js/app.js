@@ -5,7 +5,7 @@ const messageTwo = document.querySelector('#second')
 const messageThree = document.querySelector('#third')
 const icon = document.querySelector('#icon')
 
-const fetchData = (location) => {fetch('http://localhost:3000/weather?location=' + location).then((response) => {
+const fetchData = (location) => {fetch('/weather?location=' + location).then((response) => {
     response.json().then((data) => {
         if(data.error) {
             messageOne.textContent = ''
